@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Tadej Pogačar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="main-title">Quizz Tadej Pogačar</h1>
+    </header>
+
+    <main id="main">  
+        <!-- SCORE BOARD -->
+        <div id="score-container" class="hide">
+            <h2>Parabéns!</h2>
+            <p id="display-score"><span>90</span>%</p>
+            <p>Você acertou <span id="correct-answer">0</span> de <span id="questions-qty">99</span> perguntas</p>
+            <button id="restart">Refazer quizz!</button>
+        </div>
+
+        <!-- QUIZZ CONTAINER -->
+        <div id="quizz-container">
+            <p id="question">
+                <span id="question-number">1</span> - <span id="question-text">Pergunta</span>
+            </p>
+            <div id="answers-box">
+                <button><span class="btn-letter">A</span> <span class="question-answer">ABC</span></button>
+                <button><span class="btn-letter">B</span> <span class="question-answer">ABC</span></button>
+                <button><span class="btn-letter">C</span> <span class="question-answer">ABC</span></button>
+                <button><span class="btn-letter">D</span> <span class="question-answer">ABC</span></button>
+                <button><span class="btn-letter">E</span> <span class="question-answer">ABC</span></button>
+            </div>
+        </div>
+
+        <!-- TEMPLATE RESPOSTA -->
+        <button class="answer-template hide"><span class="btn-letter">A</span> <span class="question-answer">ABC</span></button>
+    </main>
+
+    <footer class="footer">
+        <p id="links">Desenvolvido por: Gustavo Matos 
+            <a href="https://www.linkedin.com/in/gustavonascimentomatos" target="_blank"><img src="img/logo_linkedin.png" alt="logo_linkedin" width="20px" height="20px"></a> | 
+            <a href="https://github.com/GustavoNascimentoMatos" target="_blank"><img src="img/logo_github.png" alt="logo_github" width="20px" height="20px"></a> | 
+            <a href="https://www.gustavomatos.com.br" target="_blank"><img src="img/logo_site.png" alt="logo_site_web" width="20px" height="26px"></a>
+        </p>
+        <p id="create">Outubro/2024</p>
+    </footer>
+</body>
+</html>      
