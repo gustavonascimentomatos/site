@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#title-game {
+    margin: 20px 0px 30px 0px;
+    font-size: 42px;
+}
+
+/* Botões */
+#buttons-container button {
+    border: none;
+    margin: 20px 10px 50px 10px;
+    padding: 10px 15px;
+}
+
+/* Campo do jogo */
+#container {
+    display: flex;
+    width: 300px;
+    margin: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    height: 100px;
+    border: 5px solid;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#block-1, #block-2,  #block-3 {
+    border-top: none;
+}
+
+#block-7, #block-8,  #block-9 {
+    border-bottom: none;
+}
+
+#block-1, #block-4,  #block-7 {
+    border-left: none;
+}
+
+#block-3, #block-6,  #block-9 {
+    border-right: none;
+}
+
+/* Símbolos */
+.x {
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.o {
+    width: 40px;
+    height: 40px;
+    border: 6px solid green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+/* Classe de esconder */
+.hide {
+    display: none !important;
+}
+
+
+/* Placar */
+#scoreboard-container {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 25px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#placar {
+    margin: 20px 0px 15px 0px;
+}
+
+.score-box{
+    margin: 5px 20px;
+}
+
+#x-scoreboard {
+    color: red;
+}
+
+#o-scoreboard {
+    width:  15px;
+    height: 15px;
+    border: 3px solid green;
+    border-radius: 50%;
+    margin-right: 1px;
+    display: inline-block;
+}
+
+/* Mensagem de vitória */
+#message p {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 200px;
+    width: 350px;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, .7);
+    color: white ;
+    padding: 30px;
+}
+
+.rodape{
+    background-color: lightgray;
+    position: fixed;
+    bottom:0%;
+    width: 100%;
+    padding: 5px;
+}
